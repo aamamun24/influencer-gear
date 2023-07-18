@@ -78,10 +78,24 @@ nav a{
 .banner-img img{
     background-image: url(../images/Circle\ design.svg);
     background-position: center;
-    background-size: cover;
+    background-size:contain;
     background-repeat: no-repeat;
     width: 80%;
     padding: 25px;
+}
+/* advertise styles */
+.advertise{
+    margin: 100px 150px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 30px;
+    padding: 25px 35px;
+    align-items: center;
+    border: 1px solid;
+    border-image: linear-gradient(to right,transparent,rgba(128, 128, 128, 0.438),transparent);
+    border-left: 0;
+    border-right: 0;
+    border-image-slice: 1;
 }
 
 
@@ -109,11 +123,21 @@ nav a{
     .header{
         text-align: center;
     }
+    .advertise{
+        margin: 20px;
+        gap: 15px;
+        padding: 20px 0;
+    }
 }
 
 /* Medium device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .header{
         padding: 50px 50px 0;
+    }
+    .advertise{
+        margin: 50px;
+        gap: 15px;
+        padding: 25px;
     }
 }
